@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  django:
+    image: django-docker
+    build: .
+    ports: ["80:80"]
+    volumes: [/Desktop/Practice/portfolio_website/db.sqlite3:/db.sqlite3]
